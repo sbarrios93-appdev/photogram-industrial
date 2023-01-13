@@ -58,6 +58,7 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # appdev Gems
 gem "faker"
 gem "devise"
+gem "annotate"
 group :development do
   gem "annotate"
   gem "awesome_print"
