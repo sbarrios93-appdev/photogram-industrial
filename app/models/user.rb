@@ -28,12 +28,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :accepted_sent_follow_requests, lambda {
-    where(status: "accepted")
-  }, foreign_key: :sender_id, class_name: "FollowRequest"
-  has_many :accepted_received_follow_requests, lambda {
-    where(status: "accepted")
-  }, foreign_key: :recipient_id, class_name: "FollowRequest"
+  validates :username, presence: true, uniqueness: true
+
+  has_many :accepted_sent_follow_requests, -> { accepted }, foreign_key: :sender_id, class_name: "FollowRequest"
+  has_many :accepted_received_follow_requests, -> { accepted }, foreign_key: :recipient_id, class_name: "FollowRequest"
   has_many :own_photos, foreign_key: :owner_id, class_name: "Photo"
   has_many :comments, foreign_key: :author_id
   has_many :likes, foreign_key: :fan_id
