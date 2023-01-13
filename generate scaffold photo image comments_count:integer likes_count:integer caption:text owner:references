@@ -1,0 +1,56 @@
+* [33mf6e24d3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Generated users
+* [33mea60b13[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m modify dependencies file style and added rubocop config
+* [33m79a385b[m[33m ([m[1;31mupstream/main[m[33m)[m Ignore test ports
+* [33m8abba76[m Update README.md
+* [33m0637b78[m Winter 23 updates (#55)
+* [33m95602d7[m server fix
+[31m|[m * [33m999594f[m[33m ([m[1;31mupstream/jw-winter-23-updates[m[33m, [m[1;31morigin/jw-winter-23-updates[m[33m)[m Updates
+[31m|[m * [33m5bfbd20[m WIP
+[31m|[m[31m/[m  
+* [33m25da7f9[m Updates
+[32m|[m * [33m95b152c[m[33m ([m[1;31mupstream/jw-test-docker-update[m[33m, [m[1;31morigin/jw-test-docker-update[m[33m)[m Node finish
+[32m|[m * [33me918a48[m drop schema
+[32m|[m * [33m1b1c395[m WIP
+[32m|[m * [33m38ac9ef[m TEST
+[32m|[m * [33m136801b[m WIP
+[32m|[m[32m/[m  
+* [33mbf93f08[m Update web_git
+* [33m9336864[m Update README.md
+* [33m99b87f9[m Update README.md
+* [33m6f38cd8[m Update README.md
+* [33m01c66c2[m Update README.md
+* [33m58d2945[m Update README.md
+* [33m9f667eb[m Update README.md
+* [33m7d600f8[m Update README.md
+* [33me3d820a[m Image updates
+* [33m4ff3e51[m Update README.md
+* [33m3fe53f2[m Update README.md
+* [33me161540[m Remove devise
+*   [33m1c1df73[m Merge pull request #39 from appdev-projects/reset-to-starting-point
+[34m|[m[35m\[m  
+[34m|[m * [33m8c29347[m[33m ([m[1;31mupstream/reset-to-starting-point[m[33m, [m[1;31morigin/reset-to-starting-point[m[33m)[m Remove scaffolds.scss
+[34m|[m * [33mba3ae01[m Destroy Photo and User
+[34m|[m[34m/[m  
+* [33maf4ccce[m Updates 2022 Spring
+[35m|[m * [33m940aa88[m[33m ([m[1;31mupstream/Updates-2022-Spring[m[33m, [m[1;31morigin/Updates-2022-Spring[m[33m)[m Fixes to updates 2020
+[35m|[m * [33mfbba472[m updated ruby version
+[35m|[m * [33m120dae6[m Updates 2022 Spring
+[35m|[m[35m/[m  
+* [33m5ca9163[m Add ERD
+* [33me944306[m Update image with fixed git alias
+[36m|[m * [33m86e7466[m[33m ([m[1;31mupstream/21-in-class-changes[m[33m, [m[1;31morigin/21-in-class-changes[m[33m)[m In-class changes from Day 3 2021
+[36m|[m * [33mb8ed0c3[m Comment out activeadmin gem
+[36m|[m * [33m63da308[m WIP
+[36m|[m * [33m649bff9[m WIP
+[36m|[m * [33m93241a1[m WIP
+[36m|[m * [33mb885937[m Update README
+[36m|[m * [33m9492d8c[m Update ERD
+[36m|[m * [33med18491[m Add ERD
+[36m|[m * [33mb0aca24[m Add example models and migrations
+[36m|[m * [33m1de9829[m Initial commit
+[36m|[m * [33m4b867ab[m[33m ([m[1;31mupstream/update-image-with-alias[m[33m, [m[1;31morigin/update-image-with-alias[m[33m)[m Update image with fixed git alias
+[36m|[m[36m/[m  
+* [33m31940bc[m Update README.md
+* [33m46cbb30[m Update README.md
+* [33m3f9ae2d[m Update README.md
+* [33m7e830ef[m Ending point of Day 3 class
