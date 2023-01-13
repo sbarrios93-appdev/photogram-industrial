@@ -25,5 +25,5 @@ class FollowRequest < ApplicationRecord
 
   validates :recipient_id, uniqueness: { scope: :sender_id, message: "already followed" }
 
-  enum status: { pending: "pending", rejected: "rejected", accepted: "accepted" } 
+  enum status: { pending: "pending", rejected: "rejected", accepted: "accepted" }
 end

@@ -16,7 +16,7 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create comment" do
-    assert_difference('Comment.count') do
+    assert_difference("Comment.count") do
       post comments_url, params: { comment: { author_id: @comment.author_id, body: @comment.body, photo_id: @comment.photo_id } }
     end
 
@@ -39,7 +39,7 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy comment" do
-    assert_difference('Comment.count', -1) do
+    assert_difference("Comment.count", -1) do
       delete comment_url(@comment)
     end
 

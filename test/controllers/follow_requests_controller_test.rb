@@ -16,7 +16,7 @@ class FollowRequestsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create follow_request" do
-    assert_difference('FollowRequest.count') do
+    assert_difference("FollowRequest.count") do
       post follow_requests_url, params: { follow_request: { recipient_id: @follow_request.recipient_id, sender_id: @follow_request.sender_id, status: @follow_request.status } }
     end
 
@@ -39,7 +39,7 @@ class FollowRequestsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy follow_request" do
-    assert_difference('FollowRequest.count', -1) do
+    assert_difference("FollowRequest.count", -1) do
       delete follow_request_url(@follow_request)
     end
 

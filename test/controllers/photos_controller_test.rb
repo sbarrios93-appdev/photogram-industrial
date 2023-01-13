@@ -16,7 +16,7 @@ class PhotosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create photo" do
-    assert_difference('Photo.count') do
+    assert_difference("Photo.count") do
       post photos_url, params: { photo: { caption: @photo.caption, comments_count: @photo.comments_count, image: @photo.image, likes_count: @photo.likes_count, owner_id: @photo.owner_id } }
     end
 
@@ -39,7 +39,7 @@ class PhotosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy photo" do
-    assert_difference('Photo.count', -1) do
+    assert_difference("Photo.count", -1) do
       delete photo_url(@photo)
     end
 

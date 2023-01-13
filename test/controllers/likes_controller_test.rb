@@ -16,7 +16,7 @@ class LikesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create like" do
-    assert_difference('Like.count') do
+    assert_difference("Like.count") do
       post likes_url, params: { like: { fan_id: @like.fan_id, photo_id: @like.photo_id } }
     end
 
@@ -39,7 +39,7 @@ class LikesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy like" do
-    assert_difference('Like.count', -1) do
+    assert_difference("Like.count", -1) do
       delete like_url(@like)
     end
 

@@ -25,14 +25,14 @@ task example_sample_data: :environment do
       if rand < 0.75
         first_user.sent_follow_requests.create(
           recipient: second_user,
-          status: FollowRequest.statuses.values.sample
+          status: FollowRequest.statuses.values.sample,
         )
       end
 
       if rand < 0.75
         second_user.sent_follow_requests.create(
           recipient: first_user,
-          status: FollowRequest.statuses.values.sample
+          status: FollowRequest.statuses.values.sample,
         )
       end
     end
@@ -42,7 +42,7 @@ task example_sample_data: :environment do
     rand(15).times do
       photo = user.own_photos.create(
         caption: Faker::Quote.jack_handey,
-        image: "https://robohash.org/#{rand(9999)}"
+        image: "https://robohash.org/#{rand(9999)}",
       )
 
       user.followers.each do |follower|
@@ -53,7 +53,7 @@ task example_sample_data: :environment do
         if rand < 0.25
           photo.comments.create(
             body: Faker::Quote.jack_handey,
-            author: follower
+            author: follower,
           )
         end
       end
