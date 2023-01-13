@@ -1,18 +1,6 @@
 {
-  "[erb]": {
-    "editor.formatOnSave": true
-  },
-  "[ruby]": {
-    "editor.formatOnSave": true
-  },
   "vscode-erb-beautify.keepBlankLines": 1,
   "vscode-erb-beautify.bundlerPath": "/home/gitpod/.rvm/ruby-3.0.3/bin/bundler",
   "vscode-erb-beautify.useBundler": true,
   "gitpod.openInStable.neverPrompt": true,
-  "redhat.telemetry.enabled": false,
-  "rufo.useBundler": true,
-  "emmet.includeLanguages": {
-    "erb": "html"
-  },
-  "explorerExclude.backup": {},
 }
