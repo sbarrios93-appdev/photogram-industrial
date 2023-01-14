@@ -38,8 +38,8 @@ class User < ApplicationRecord
   has_many :sent_follow_requests, foreign_key: :sender_id, class_name: "FollowRequest"
   has_many :received_follow_requests, foreign_key: :recipient_id, class_name: "FollowRequest"
   has_many :liked_photos, through: :likes, source: :photo
-  has_many :leaders, through: :accepted_sent_follow_requests, source: :recipient_id
-  has_many :followers, through: :accepted_received_follow_requests, source: :sender_id
+  has_many :leaders, through: :accepted_sent_follow_requests, source: :recipient
+  has_many :followers, through: :accepted_received_follow_requests, source: :sender
   has_many :feed, through: :leaders, source: :own_photos
   has_many :discover, through: :leaders, source: :liked_photos
 end

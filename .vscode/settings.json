@@ -3,4 +3,7 @@
   "vscode-erb-beautify.bundlerPath": "/home/gitpod/.rvm/ruby-3.0.3/bin/bundler",
   "vscode-erb-beautify.useBundler": true,
   "gitpod.openInStable.neverPrompt": true,
+  "solargraph.transport": "stdio",
+  "solargraph.formatting": true,
+  "solargraph.diagnostics": true
 }
