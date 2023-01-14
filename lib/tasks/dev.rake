@@ -28,7 +28,7 @@ task sample_data: :environment do
       email: Faker::Internet.email,
       password: Faker::Internet.password(min_length: 8),
       private: Faker::Boolean.boolean,
-      username: Faker::Internet.username,
+      username: Faker::Internet.username(separators: %w(_)),
     )
   end
   p "#{User.count} users have been created"
