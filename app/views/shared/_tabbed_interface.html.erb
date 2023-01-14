@@ -16,10 +16,10 @@
         <%= link_to 'Feed', feed_path(@user.username), class: "nav-link #{'active' if action_name == 'feed'}" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link ">Followers</a>
+        <%= link_to 'Followers', followers_path(@user.username), class: "nav-link #{'active' if action_name == 'followers'}" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link ">Following</a>
+        <%= link_to 'Following', leaders_path(@user.username), class: "nav-link #{'active' if action_name == 'leaders'}" %>
       </li>
     </ul>
 
