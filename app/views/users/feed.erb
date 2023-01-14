@@ -1,0 +1,7 @@
+<%= render 'shared/tabbed_interface' %>
+
+<% current_user.leaders.each do |leader| %>
+  <% leader.own_photos.each do |photo| %>
+    <%= render 'photos/photo', photo: photo %>
+  <% end %>
+<% end %>
