@@ -8,9 +8,23 @@
 
     <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
     <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
+
+    <%= render "shared/cdn_assets" %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= render "shared/navbar" %>
+    </div>
+    <div class="container">
+      <% if notice.present? %>
+        <%= render 'shared/flash', message: notice, css_class: "success" %>
+      <% end %>
+      <% if alert.present? %>
+        <%= render 'shared/flash', message: alert, css_class: "danger" %>
+      <% end %>
+      <%= yield %>
+    </div>
+
   </body>
 </html>

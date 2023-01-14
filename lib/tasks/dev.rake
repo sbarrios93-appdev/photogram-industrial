@@ -14,6 +14,15 @@ task sample_data: :environment do
   p "Creating sample data"
   # Create users
   p "Creating users"
+
+  # create known user
+  User.create!(
+    email: "test@test.com",
+    password: "test123",
+    private: false,
+    username: "test",
+  )
+
   user_count.times do
     User.create!(
       email: Faker::Internet.email,
